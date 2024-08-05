@@ -3,6 +3,7 @@ import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import React from 'react'
 import homeStyles from '@/styles/Home.module.css' 
+import postStyles from '@/styles/Post.module.css'
 
 const Post = ({postData}:
     { postData: {
@@ -12,7 +13,7 @@ const Post = ({postData}:
     }}
 ) => {
   return (
-    <div>
+    <div className={postStyles.container}>
       <Head>
         <title>{postData.title}</title>
       </Head>

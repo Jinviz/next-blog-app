@@ -16,7 +16,7 @@ const Home = ({allPostsData}: // Props를 중괄호로 감싸줬기 때문에 �
 	}
 	) =>{
 	return (
-		<>
+		<div className={homeStyles.container}>
 			<Head>
 				<title>Next-Blog-App</title>
 				<link rel="icon" href="/favicon.ico" />
@@ -44,7 +44,7 @@ const Home = ({allPostsData}: // Props를 중괄호로 감싸줬기 때문에 �
 				</ul>
 			</section>
 
-		</>
+		</div>
 	);
 }
 export default Home;
